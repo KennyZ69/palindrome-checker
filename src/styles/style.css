@@ -12,9 +12,9 @@ body {
 section {
   border: white dashed 3px;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  top: 40%;
+  left: 35%;
   border-radius: 4px;
   max-width: 45vw;
   flex-direction: column;
