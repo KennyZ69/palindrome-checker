@@ -1,16 +1,4 @@
-// /// <reference lib="dom" /> 
-// import { transpileThis } from './main.ts'
-
-
-// const transpiler = new Bun.Transpiler({
-//     loader: "js",
-// });
-
-// const code = transpileThis();
-// const result = transpiler.transformSync(code);
-// const file = Bun.file("jscode.js", {type: "text/javascript"})
-// console.log(file.type);
-// console.log(result);
+/// <reference lib="dom" /> 
 
 const checkBtn = document.getElementById("check-btn");
 const userInput = document.querySelector(".input");
