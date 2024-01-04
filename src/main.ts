@@ -1,15 +1,5 @@
 /// <reference lib="dom" />
 
-// ! Alright, I need to make a plan
-// ! Firstly I've taken all the elements I need rn, I've made the Error function.
-// ! Also I've started checking for the palindrome, starting with getting the org input and replacing the last result made.
-// ! Next make it the same case to be able to check it
-// ! Show the results div.
-// ! Make the event listner for click on the Btn, also for the Enter key !
-// ! Lets make it all work tomorrow, 4.1.24;
-
-export function transpileThis(): void{
-
 const checkBtn = document.getElementById('check-btn');
 const userInput: any = document.querySelector('.input');
 const resultsDiv = document.querySelector('.results');
@@ -59,9 +49,4 @@ userInput.addEventListener('keydown', (e: any) => {
     checkForPalindrome(userInput.value);
     userInput.value = '';
   }
-})
-};
-
-// Headers('Content-Type: ')
-// const file = Bun.file('/main.ts', { type: "typescript" })
-// console.log(file);
+});
