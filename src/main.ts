@@ -22,9 +22,9 @@ const checkForPalindrome = (input: string | number) => {
   // ! Used this of statement from chatgtp to make the text lower case, tested it in the 'counter' file
   if (typeof input === 'string') {
     // Use a regular expression to match and convert only string parts to lowercase
-   lowerCased = input.replace(/[a-zA-Z]/g, (match) => match.toLowerCase());
+   lowerCased = input.replace(/[^A-Za-z0-9]/gi, '').toLowerCase();
   }
-  lowerCased = input.toString();
+  lowerCased = input.toString().replace(/[^A-Za-z0-9]/gi, '').toLowerCase();
 
   let resultMSg = `<strong>${originalInput}</strong> ${lowerCased === [...lowerCased].reverse().join('') ? 'is' : 'is not'} a palindrome.`;
 
