@@ -5,27 +5,32 @@
 }
 
 body {
-  padding: 10px;
   background-color: rgb(2, 0, 34);
 }
 
 section {
   border: white dashed 3px;
   color: white;
-  position: relative;
-  top: 40%;
-  left: 35%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   border-radius: 4px;
-  max-width: 45vw;
+  max-width: 35vw;
   flex-direction: column;
   gap: 4rem;
+  margin: 10px;
 }
 
 .checker {
-  position: absolute;
-  padding: 1.4rem;
-  top: 30%;
-  left: 38%;
+  position: relative;
+  top: 30vh;
+  left: 35%;
+  padding: 1.2rem;
+}
+.checker .title {
+  display: flex;
+  justify-self: center;
+  align-self: center;
 }
 
 .hidden {
@@ -35,15 +40,14 @@ section {
 .palindrome {
   box-shadow: 0 6px 6px #002ead;
   background-color: white;
-  width: min(100vw, 450px);
+  width: min(100%, 400px);
   min-height: 100px;
   border-radius: 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-self: center;
+  align-self: center;
   flex-wrap: wrap;
-  padding: 20px;
-  margin: 10px 0;
+  padding: 15px;
 }
 
 label {
@@ -64,7 +68,7 @@ label {
 
 .input {
   height: 30px;
-  width: 250px;
+  width: 80%;
   text-align: center;
   font-size: 1.2rem;
   margin: 10px;
@@ -77,10 +81,55 @@ label {
   word-wrap: break-word;
   min-height: 50px;
   color: black;
+  margin: 10px;
 }
 
 .user-input {
   font-size: 1.4rem;
   margin-top: 10px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    max-width: 80vw;
+    max-height: 40vh;
+    padding: 8px;
+  }
+  .palindrome {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  section {
+    max-width: 390px;
+    padding: 5px;
+    max-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+  }
+  body {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .checker {
+    width: 90%;
+    margin: 4px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  .palindrome {
+    width: 90%;
+  }
+  .results {
+    overflow-y: auto;
+    word-wrap: break-word;
+    color: black;
+  }
 }/*# sourceMappingURL=style.css.map */
