@@ -93,7 +93,7 @@ label {
 @media screen and (max-width: 768px) {
   section {
     max-width: 80vw;
-    max-height: 40vh;
+    max-height: 80vh;
     padding: 8px;
   }
   .palindrome {
@@ -104,7 +104,7 @@ label {
   section {
     max-width: 390px;
     padding: 5px;
-    max-height: 40vh;
+    max-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,5 +131,6 @@ label {
     overflow-y: auto;
     word-wrap: break-word;
     color: black;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
